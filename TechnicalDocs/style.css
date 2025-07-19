@@ -1,0 +1,82 @@
+body,html{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    min-width: 900px;
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    position: fixed;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid grey;
+    overflow: auto;
+}
+#navbar a{
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    padding: 12px 30px;
+    cursor: pointer;
+    border-top: 1px solid rgb(152, 149, 149);
+    border-bottom: 1px solid rgb(152, 149, 149);
+}
+#navbar header{
+    font-size: 28px;
+    margin: 20px;
+    margin-top: 10px;
+}
+header{
+    font-size: 28px;
+    padding-top: 20px;
+}
+#main-doc{
+    padding: 0px 10px 10px 10px;
+    position: relative;
+    left: 310px;
+    width: calc(100vw - 350px);
+}
+main{
+    padding-left: 20px;
+}
+li{
+    margin: 10px 0 0 20px;
+}
+p,li{
+    color: rgb(54, 54, 54);
+    font-size: 16px;
+}
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;  
+}
+@media screen and (max-width: 1000px){
+    html{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+    #main-doc{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+}
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar {
+      border: 1px solid;
+      height: 100%;
+    } 
+}
