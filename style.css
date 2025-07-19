@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    /* height: 100%; */
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #212121;
+}
+#inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.singleTask{
+    margin: 1rem;
+}
+.task{
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: white 2px underline;
+}
+a:hover img{
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+a img{
+    transition: all 0.5s;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+    margin: 20px 0px;
+}
+h3{
+    text-align: center;
+    color: #616060;
+    color: whitesmoke;
+}
+
